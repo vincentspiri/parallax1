@@ -1,0 +1,60 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+.wrapper {
+    background-color: #649cb7;
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+    perspective: 10px;
+}
+
+header {
+    position: relative;
+    display: grid;
+    place-items: center;
+    height: 100%;
+    transform-style: preserve-3d;
+    z-index: -1;
+}
+
+.images {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.mountain1 {
+    transform: translateZ(-5px) scale(1.5);
+}
+.mountain2 {
+    transform: translateZ(-10px) scale(2);
+}
+.mountain3 {
+    transform: translateZ(-20px) scale(3);
+}
+h1 {
+    color: white;
+    font-size: 300px;
+    transform: translateZ(-15px);
+}
+.mountain4 {
+    transform: translateZ(-30px) scale(4);
+}
+
+
+section {
+    background-color: #27213c;
+    color: white;
+    padding: 100px;
+    font-size: 1.5rem;
+}
